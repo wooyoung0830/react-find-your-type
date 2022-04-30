@@ -3,7 +3,7 @@ type Props = {
     question : string;
     answers : string[];
     callback : any;
-    userAnswer : string;
+    userAnswer : any;
     questionNum : number;
     totalQuestions : number;
 }
