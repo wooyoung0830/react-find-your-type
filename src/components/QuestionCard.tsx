@@ -22,13 +22,13 @@ function QuestionCard ({
             {/* dangerouslySetInnerHTML : DOM에 innerHTMl을 사용하기 위해서. __html키로 객체전달 */}
             <p dangerouslySetInnerHTML={{__html : question}}/>
             <div>
-                {answers.map(answwer => (
+                {answers.map(answer => (
                     <div>
-                        <button disabled={userAnswer} onClick={callback}>
+                        <button disabled={userAnswer} value={answer} onClick={callback}>
                             <span dangerouslySetInnerHTML={{__html : answer}} />
                         </button>
                     </div>
-                })}
+                ))}
             </div>
         </div>
     };
